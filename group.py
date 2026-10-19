@@ -6,6 +6,17 @@
 # Nash is 34, a chef, John's cousin and Zalika's landlord.
 
 # Your code to go here...
+import numpy as np
 
-my_group = [Jill,[]]
-                 
+
+# Each row contains a name and that person's details.
+my_group = [
+    ["Jill", [26, "biologist", ["Zalika", "John"]]],
+    ["Zalika", [28, "artist", ["Jill"]]],
+    ["John", [27, "writer", ["Jill"]]],
+    ["Nash", [34, "chef", ["John", "Zalika"]]],
+]
+
+# Keep the nested lists as objects in a two-dimensional array.
+np_array = np.array(my_group, dtype=object)
+print(np_array[2])
