@@ -3,7 +3,7 @@
 # Your code to go here...
 
 
-# push branch
+# push another branch and pr
 my_group = {
     "Jill": {"age": 26, "job": "biologist",
     "relation": {
@@ -16,7 +16,7 @@ my_group = {
     "Zalika": {"age": 28, "job": "artist",
     "relation": {
         "friend": ["Jill"],
-        "partner":[Noe],
+        "partner":[None],
         "landlord":["Nash"],
         "cousin":[]}
         },
