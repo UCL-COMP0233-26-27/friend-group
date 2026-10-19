@@ -19,6 +19,7 @@ Nash = {"name": "Nash", "age": 34,
 print(Nash["age"])
 Jill.keys()
 John.values()
+print(Zalika["Connections"])
 
 ## Jill is 26, a biologist and she is Zalika's friend and John's partner.
 ## Zalika is 28, an artist, and Jill's friend
