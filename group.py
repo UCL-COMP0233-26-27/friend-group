@@ -2,5 +2,40 @@
 
 # Your code to go here...
 
+my_group = {
+    "Jill":{
+        "age": 26,
+        "occupation": "biologist",
+        "relationships":{
+            "friend": "Zalika",
+            "partner": "John"
+        }
+    },
 
-my_group =
+    "Zalika":{
+        "age": 28,
+        "occupation": "artist",
+        "ralationships":{
+            "friend": "Jill",
+            "landlord": "Nash"
+        }
+    },
+
+    "John":{
+        "age": 27,
+        "occupation": "writer",
+        "relationships":{
+            "partner": "Jill",
+            "cousin": "Nash"
+        }
+    },
+
+    "Nash":{
+        "age": 34,
+        "occupation": "chef",
+        "relationships":{
+            "cousin": "John",
+            "tenant": "Zalika"
+        }
+    }
+}
