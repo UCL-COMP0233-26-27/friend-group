@@ -39,3 +39,7 @@ my_group = {
         }
     }
 }
+
+
+print(my_group["Jill"])
+print(my_group["Jill"]["relationships"]["friend"])  # Output: Zalika
