@@ -37,6 +37,8 @@ my_group = {
         ]
     }
 }
-print(my_group["Jill"]["age"])
-print(my_group["Nash"]["job"])
-print(my_group["Jill"]["connections"])
+
+for key in my_group:
+    print(f"{key} is a {my_group[key]['job']} and is {my_group[key]['age']} years old.")
+    for connection in my_group[key]["connections"]:
+        print(f"  - {connection['name']}'s {connection['relationship']}")
