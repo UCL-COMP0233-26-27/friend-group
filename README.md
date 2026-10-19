@@ -24,5 +24,4 @@ Create an example instance, in an editor or a notebook, of a structure for this 
 Some things you may wish to consider in your model:
 - Does it allow people who have no job?
 - Does it allow people with no connections?
-- Does it assume that connections are always reciprocal (e.g. if A is B's friend, does B
-automatically consider A a friend too?)
+- Does it assume that connections are always reciprocal (e.g. if A is B's friend, does B automatically consider A a friend too?)
