@@ -5,11 +5,14 @@
 # my_group = 
 
 class Person:
-    def __init__(self, name, age, occupation=None, relationship=None):
+    def __init__(self, name, age, occupation=None):
         self.name = name
         self.age = age
         self.occupation = occupation
-        self.relationship = relationship
+        self.relationships = {}
+
+    def add_relationship(self, realted_person, relation):
+        self.relationships.update({realted_person: relation})
 
 
 person0 = Person("Jill", 26, "biologist")
@@ -18,3 +21,6 @@ person2 = Person("John", 27, "writer")
 person3 = Person("Nash", 34, "chef")
 
 my_group = [person0, person1, person2, person3]
+
+person0.add_relationship(person1, "friend")
+
