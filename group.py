@@ -2,4 +2,38 @@
 
 # Your code to go here...
 
-my_group =
+
+# push another branch and pr
+my_group = {
+    "Jill": {"age": 26, "job": "biologist",
+    "relation": {
+        "friend": ["Zalika", "John"], 
+        "partner": ["John"],
+        "landlord":[],
+        "cousin":[]}
+        },
+
+    "Zalika": {"age": 28, "job": "artist",
+    "relation": {
+        "friend": ["Jill"],
+        "partner":[None],
+        "landlord":["Nash"],
+        "cousin":[]}
+        },
+
+    "John": {"age": 27, "job": "writer",
+    "relation": {
+        "friend": [],
+        "partner":["Jill"],
+        "landlord":[],
+        "cousin":["Nash"]}
+        },
+
+    "Nash": {"age": 34, "job": "chef",
+    "relation": {
+        "friend": [],
+        "partner":[],
+        "landlord":[],
+        "cousin":[]}
+        }
+}
