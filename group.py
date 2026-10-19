@@ -36,5 +36,7 @@ my_group = [
         ],
     },
 ]# Your code to go here...
-
-
+# A person without a job can have job set to None.
+# A person without connections can have an empty connections list.
+# Relationships are directional; reverse connections must be added explicitly.
+# Each relationship describes this person's role relative to the named person.
