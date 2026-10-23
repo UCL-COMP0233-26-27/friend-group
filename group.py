@@ -30,3 +30,20 @@ Nash = {"name": "Nash",
         "connections":[{"name": "John", "status": "cousin"},{"name":"Zalika", "status":"tenant"}]}
 
 people = [Jill, Zalika, John, Nash]
+
+max_age = max(person["age"] for person in people)
+mean_connections = sum(len(person["connections"]) for person in people) / len(people)
+max_age_with_friend = max(
+    person["age"]
+    for person in people
+    if any(
+        connection["status"] == "friend"
+        for connection in person["connections"]
+    )
+)
+max_age_with_at_least_1_connections = max(person["age"] for person in people if len(person["connections"]) >= 1)
+
+print (max_age)
+print (mean_connections)
+print (max_age_with_friend)
+print (max_age_with_at_least_1_connections)
