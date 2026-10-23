@@ -1,21 +1,32 @@
 """An example of how to represent a group of acquaintances in Python."""
 
-# Jill is 26, a biologist and she is Zalika's friend and John's partner.
-# Zalika is 28, an artist, and Jill's friend
-# John is 27, a writer, and Jill's partner.
-# Nash is 34, a chef, John's cousin and Zalika's landlord.
+# Your code to go here...
+"""An example of how to represent a group of acquaintances in Python."""
 
 # Your code to go here...
-import numpy as np
 
 
-# Each row contains a name and that person's details.
-my_group = {
-    "Jill": [[26, "biologist", ["Zalika", "John"]]],
-    "Zalika": [[28, "artist", ["Jill"]]],
-    "John": [[27, "writer", ["Jill"]]],
-    "Nash": [[34, "chef", ["John", "Zalika"]]],
-}
+Jill = {"name": "Jill",
+        "age": 26,
+        "job": "Biologist",
+        "connections":[{"name": "Zalika", "status": "friend"},
+        {"name":"John", "status":"partner"}]}
 
-# Keep the nested lists as objects in a two-dimensional array.
-print(my_group["Jill"])
+
+Zalika = {"name": "Zalika",
+        "age": 28,
+        "job": "Artist",
+        "connections":[{"name": "Jill", "status": "friend"}]}
+
+
+John = {"name": "John",
+        "age": 27,
+        "job": "Writer",
+        "connections":[{"name": "Jill", "status": "partner"}]}
+
+Nash = {"name": "Nash",
+        "age": 34,
+        "job": "Chef",
+        "connections":[{"name": "John", "status": "cousin"},{"name":"Zalika", "status":"tenant"}]}
+
+people = [Jill, Zalika, John, Nash]
